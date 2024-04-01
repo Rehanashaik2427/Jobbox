@@ -1,0 +1,40 @@
+body{
+    background-color: aqua;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    width: 400px;
+    background-color: aliceblue;
+    margin-left: 40%;
+    border-radius: 5%;
+}
+
+form .container input
+ {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    /* border: 1px solid #ccc; */
+    margin-left: 25px;
+}
+.container h1{
+    margin-left: 25%;
+}
+button {
+    width: 60%;
+    padding: 10px;
+    margin-left: 20%;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+ button:hover {
+    background-color: #0056b3;
+}
+form .container label{
+    margin-left: 25px;
+}

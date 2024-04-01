@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="data.css">
+    <title>Candidate Registration</title>
+</head>
+<body>
+    <h1>Candidate Data</h1>
+    <form id="candidateForm" action="loginpage.html" method="post" onsubmit="return redirectToSuccessPage() ">
+        <div class="container">
+            <h1>Personal Details</h1>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+            <label for="contact"><b>Contact Number</b></label>
+            <input type="tel" placeholder="Enter Number" name="number" id="number" required>
+
+            <label for="dob"><b>Date of Birth</b></label>
+            <input type="date" placeholder="Enter Date of Birth" name="dob" id="dob" required>
+
+            <h1>Education</h1>
+            <label for="College"><b>College</b></label>
+            <input type="text" placeholder="Enter College Name" name="college" id="college" required>
+
+            <label for="Degree"><b>Degree</b></label>
+            <input type="text" placeholder="Degree" name="degree" id="degree" required>
+
+            <label for="YOP"><b>Year of Passing</b></label>
+            <input type="number" placeholder="yop" name="yop" id="yop" required>
+
+            <label for="Resume"><b>Resume</b></label>
+            <input type="text" placeholder="Resume Link" name="resume" id="resume" required>
+
+            <label for="IdProof"><b>IdProof</b></label>
+            <input type="file" placeholder="IdProof" name="IdProof" id="IdProof" required>
+
+            <p>By creating an account, you agree to our <a href="./termsandcondition.html">Terms & Privacy</a>.</p>
+            <button type="submit" class="">SUBMIT</button>
+        </div>
+    </form>
+
+    <script>
+        document.getElementById('candidateForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            window.location.href = './candidateDataSubmitSuccess.html'; // Redirect to candidatesuccessful page
+        });
+
+        function redirectToSuccessPage() {
+    
+        window.location.href = "./loginpage.html";
+        return false; // Prevent the form from submitting
+}
+    </script>
+</body>
+</html>

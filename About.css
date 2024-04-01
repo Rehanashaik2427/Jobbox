@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Set height to full viewport height */
+}
+
+.row {
+    display: flex;
+    height: 50%; /* Each row takes half of the container height */
+    /* border: 1px solid black; */
+}
+
+.column {
+    flex: 1; /* Each column takes equal space */
+    padding: 10px;
+}
+.img {
+    max-width: 100%; /* Ensure image fits within the column */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.img2 , .img3{
+    max-width: 100%; /* Ensure image fits within the column */
+    height: 300px;
+}
+
+.text:hover {
+    background-color: #be929d; /* Change background color on hover */
+}

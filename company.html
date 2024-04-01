@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Details Form</title>
+    <link rel="stylesheet" href="comapny.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Company Details</h2>
+        <form id="companyForm" action="./companyLoginMess.html" method="post">
+            <label for="companyId">Company ID:</label>
+            <input type="text" id="companyId" name="companyId" required>
+
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" name="companyName" required>
+
+            <label for="contactNumber">Contact Number:</label>
+            <input type="tel" id="contactNumber" name="contactNumber" required>
+
+            <label for="companyEmail">Company Email:</label>
+            <input type="email" id="companyEmail" name="companyEmail" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <input type="submit" value="Submit">
+        </form>
+        <div id="successMessage" class="success-message">
+            Company Login Successful
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
